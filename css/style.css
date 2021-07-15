@@ -395,7 +395,7 @@ footer .rrss-footer a:last-child {
 
 .container-main .max-w{
     display: flex;
-    height: 90vh;
+    min-height: 90vh;
     box-sizing: border-box;
     margin: 0 auto;
 }
@@ -570,6 +570,126 @@ footer .rrss-footer a:last-child {
     margin-bottom: 20px;
 }
 
+.container-video-display-2 .school-material {
+    width: 100%;
+}
+
+.container-video-display-2 .school-material:hover {
+    background: none;
+}
+
+.container-video-display-2 .school-material .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-video-display-2 .school-material .container-cards .card label{
+    min-width: 290px;
+    margin-right: 10px;
+}
+
+.btn-return {
+    box-sizing: border-box;
+    padding: 20px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.btn-return .arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    background: var(--yellow);
+    border-radius: 100%;
+}
+
+.btn-return .arrow-right img {
+    height: 18px;
+    margin-right: 2px;
+}
+
+.btn-return p{
+    margin-bottom: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+
+.m-3 {
+    margin-top: 30px;
+}
+
+.display-video {
+    display: flex;
+    padding: 50px 30px;
+    box-sizing: inherit;
+}
+
+.display-video .text-video {
+    border: 2px solid var(--blue);
+    width: 40%;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.display-video .text-video h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--blue);
+}
+
+.bg-blue-light {
+    background: #E9F7FA;
+}
+
+.display-video .text-video p {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.display-video .text-video .next-btn {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.display-video .text-video .next-btn button {
+    width: 240px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    background: var(--blue);
+    color: #FFF;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.display-video .video {
+    margin: auto 0;
+    width: 58%;
+    background: blue;
+    border-radius: 30px;
+    margin-left: 2%;
+    height: 400px;
+}
+
 @media (max-width: 1164px) {
     .school-resources .contain-books {
         justify-content: flex-start;
@@ -577,6 +697,12 @@ footer .rrss-footer a:last-child {
 
     .school-resources .contain-books .book {
        margin-right: 30px
+    }
+}
+
+@media (max-width: 1000px) {
+    .container-video-display-2 .school-material .container-cards {
+        justify-content: center;
     }
 }
 
@@ -641,6 +767,26 @@ footer .rrss-footer a:last-child {
         width: 100%;
     }
 
+    .container-video-display-2 .school-material .container-cards {
+        justify-content: center;
+    }
+
+    .display-video {
+        flex-direction: column;
+    }
+
+    .display-video .text-video {
+        width: 100%;
+        order: 2;
+        margin-top: 30px;
+    }
+
+    
+    .display-video .video {
+        margin:0;
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 939px) {
@@ -653,6 +799,18 @@ footer .rrss-footer a:last-child {
     .container-main .school-material .container-cards .card {
         margin-right: 30px;
     }  
+}
+
+@media (max-width: 768px) {
+    .display-video .video {
+        height: 300px;
+    }
+}
+
+@media (max-width: 739px) {
+    .container-video-display-2 .school-material .container-cards {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 699px) {
@@ -704,6 +862,12 @@ footer .rrss-footer a:last-child {
 
     footer .footer-down .contain-email button {
         margin-left: -53px;
+    }
+}
+
+@media (max-width: 487px) {
+    .display-video .video {
+        height: 220px;
     }
 }
 
